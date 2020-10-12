@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    scroll-behavior: smooth;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar{
+    font-size: 2vw;
+    position: relative;
+    width: 100%;
+    height: 8%;
+    background-color: rgb(10, 179, 179);
+}
+
+.navbar a{
+    cursor: auto;
+}
+
+.form {
+	margin: 5%;
+	float: left;
+	display: grid;
+	grid-template-columns: auto auto;
+	align-items: center;
+}
+
+.form > div {
+	margin: 10%;
+}
+
+.form > input {
+	height: 60%;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	border-bottom: 1px solid black;
+}
+
+#submit {
+	background-color: white; 
+	color: black;
+	border: 2px solid #008CBA;
+	transition-duration: 0.4s;
+	height: 90%;
+	cursor: pointer;
+	margin: 4%;
+}
+
+#submit:hover {
+	background-color: #008CBA;
+	color: white;
+}
