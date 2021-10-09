@@ -52,3 +52,11 @@
 		"a": "I wish that Santa will send some clothes to those naked girls in papa's computer.",
 		"form": "qa"
 	}
+	
+	"10" : {
+	"_id": "5c8a1d5b0190b214360dc097",
+	"category": “Crio Bytes",
+	"clusterName": "OOP Foundations",
+	"bytes": [“Abstraction”, “Inheritance”, “Encapsulation”, “Polymorphism”]
+	"isFree": true
+	}
