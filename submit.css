@@ -59,6 +59,8 @@ h1 {
 }
 p {
   color: red;
+  padding: 20px;
+  margin: 20px;
 }
 body {
     padding-left: 11em;
@@ -74,3 +76,10 @@ body {
   h1 {
     font-family: Helvetica, Geneva, Arial,
           SunSans-Regular, sans-serif }
+
+body {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  line-height:1;
+}
+
