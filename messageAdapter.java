@@ -22,6 +22,7 @@ public class messageAdapter extends ArrayAdapter<chat_message> {
         if (convertView == null) {
             convertView = ((Activity) getContext()).getLayoutInflater().inflate(R.layout.message_box, parent, false);
         }
+
        TextView messageView = (TextView) convertView.findViewById(R.id.messageTextView);
        TextView nameView = (TextView) convertView.findViewById(R.id.nameTextView);
         ImageView photoImageView = (ImageView) convertView.findViewById(R.id.photoImageView);
