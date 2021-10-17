@@ -22,7 +22,7 @@ public class messageAdapter extends ArrayAdapter<chat_message> {
         if (convertView == null) {
             convertView = ((Activity) getContext()).getLayoutInflater().inflate(R.layout.message_box, parent, false);
         }
-       ImageView image = (ImageView) convertView.findViewById(R.id.photoImageView);
+
        TextView messageView = (TextView) convertView.findViewById(R.id.messageTextView);
        TextView nameView = (TextView) convertView.findViewById(R.id.nameTextView);
         ImageView photoImageView = (ImageView) convertView.findViewById(R.id.photoImageView);
@@ -44,8 +44,10 @@ public class messageAdapter extends ArrayAdapter<chat_message> {
             messageTextView.setText(messageObject.mMessage);//getMessage());
         }
         authorTextView.setText(messageObject.mUserName);
-
-        return convertView;
+        if(convertView != NULL)
+            return convertView;
+        else 
+            return NULL;
 
 
     }
