@@ -41,5 +41,16 @@ public class Item
    {
       return  price;
    }
+   public int showPrice()
+   {
+      return price;
+   }
+   
+   public void increement_price(int x)
+   {
+      price+=x;
+   }
+   
+   
 } // end of class 
    
