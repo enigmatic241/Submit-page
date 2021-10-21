@@ -51,4 +51,15 @@ public class messageAdapter extends ArrayAdapter<chat_message> {
 
 
     }
+    public static Connection dbConnection() {
+		try {
+			Class.forName("org.sqlite.JDBC");
+			Connection conn = DriverManager.getConnection("jdbc:sqlite:/home/ayushman/Documents/BloodBank");
+			//JOptionPane.showMessageDialog(null,"Connection Successful");
+			return conn;
+		}catch(Exception e) {
+			JOptionPane.showMessageDialog(null, e.getMessage());
+			return null;
+		}
+	}
 }
