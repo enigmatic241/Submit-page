@@ -30,7 +30,7 @@ public class Item
    {
       return  qty;
    }
-
+  
    public void setQty(int qty)
    {   this.qty = qty; }
 
@@ -45,7 +45,10 @@ public class Item
    {
       return price;
    }
-   
+   public int getInventory()
+   {
+      return  qty;
+   }
    public void increement_price(int x)
    {
       price+=x;
@@ -56,8 +59,8 @@ public class Item
 			PreparedStatement pst = connection.prepareStatement(query);
 			ResultSet rst = pst.executeQuery();
 			table.setModel(DbUtils.resultSetToTableModel(rst));
-			//rst.close();
-			pst.close();
+			rst.close();
+			//pst.close();
 		}catch(Exception ex) {
 			JOptionPane.showMessageDialog(null, ex);
 		}
