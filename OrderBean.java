@@ -51,7 +51,7 @@ public class OrderBean implements SessionBean {
        while ( itr.hasNext())
        {
              item = (Item) itr.next();
-             totamt +=  item.getPrice() * item.getQty();
+             totamt =totamt +  item.getPrice() * item.getQty();
        }
 
 
@@ -129,8 +129,9 @@ public class OrderBean implements SessionBean {
        int cnt = ps.executeUpdate();
        ps.close();
 
-       if (cnt == 1) return true;
-       else  return false;
+       if (cnt != 1) 
+         return false;
+       else  return true;
       
        
     }
