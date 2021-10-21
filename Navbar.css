@@ -1,6 +1,6 @@
 #h1 {
   font-weight: bolder;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 #d {
@@ -17,17 +17,17 @@
 }
 
 #span1 {
-  font-weight: 700;
+  font-weight: 800;
   color: #000;
 }
 
 #span2 {
-  font-weight: 700;
+  font-weight: 800;
   color: #5cb163;
 }
 
 #link {
-  font-weight: 700;
+  font-weight: 800;
   color: #878282;
   margin-right: 40px;
 }
