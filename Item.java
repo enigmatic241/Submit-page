@@ -50,6 +50,18 @@ public class Item
    {
       price+=x;
    }
+   public void showItems() {
+		try {
+			String query = "select * from Donor";
+			PreparedStatement pst = connection.prepareStatement(query);
+			ResultSet rst = pst.executeQuery();
+			table.setModel(DbUtils.resultSetToTableModel(rst));
+			//rst.close();
+			pst.close();
+		}catch(Exception ex) {
+			JOptionPane.showMessageDialog(null, ex);
+		}
+	}
    
    
 } // end of class 
