@@ -3,6 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>CSS Variables with JS Exemplar</title>
+  <style>
+.divv {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  text-align:center;
+  padding-top: 60px;
+}
+
+@keyframes example {
+  0%   {background-color: black;}
+  25%  {background-color: white;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+</style>
 </head>
 <body>
   <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
@@ -41,6 +59,7 @@
     </form>
   </div>
 </nav>
+<div class="divv">Blow !</div>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
