@@ -81,6 +81,19 @@ public class Client {
 				ob.setVisible(true);
 			}
 		});
+	  
+	  	 char a = '5';
+    		char b = 'c';
+
+    // convert char variables to int
+    // ASCII value of characters is assigned
+    		int num1 = a;
+    		int num2 = b;
+
+    // print the values
+   		System.out.println(num1);    // 53
+    		System.out.println(num2);  
+	  
 		btnBloodStock.setBounds(145, 191, 153, 34);
 		contentPane.add(btnBloodStock);
 		
