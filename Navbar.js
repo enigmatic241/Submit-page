@@ -3,6 +3,7 @@ import './Navbar.css';
 import logo from './icon.png';
 
  class Navbar extends Component {
+    
     render() {
         return (
             <div id="d">
@@ -22,6 +23,9 @@ import logo from './icon.png';
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#" id="link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="link">About</a>
                         </li>
                         </ul>
                         <a class="nav-link" href="#" id="span1">Login</a>
