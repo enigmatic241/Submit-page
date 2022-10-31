@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media-Query</title>
+    <style>
+        ul {
+        list-style-type: none;
+         margin: 0;
+         padding: 0;
+        }
+        .box {
+            background-color: tomato;
+            text-align: center;
+            margin: 20px;
+            padding: 10px;
+            display: none;
+        }
+        @media only screen and (min-width:300px) and (max-width:500px) {
+            #box1 {
+                display: block;
+                background-color: royalblue;
+            }
+        }
+        @media (max-width:600px) {
+            #box2 {
+                display: block;
+            }
+        }
+        input {
+            display: block;
+        }
+        .container {
+            display: block;
+            width: 40%;
+            margin: auto;
+        }
+        input[type="text"] {
+            border-color: sienna;
+        }
+    </style>
+</head>
+<body>
+     <ul>
+  <li><a href="default.asp">Home</a></li>
+  <li><a href="news.asp">News</a></li>
+  <li><a href="contact.asp">Contact</a></li>
+  <li><a href="about.asp">About</a></li>
+    </ul> 
+    <div class="box" id="box1">hi!</div>
+    <div class="box" id="box2">Chatbot here</div>
+    <div class="container">
+        <form action="" class="form-control">
+            <input type="text" placeholder="Name">
+            <input type="password" placeholder="Password">
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">1</li>
+            <li class="item" id="item-2">2</li>
+            <li class="item" id="item-3">3</li>
+            <li class="item" id="item-4">4</li>
+        </ul>
+    </div>
+</body>
+</html>

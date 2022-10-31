@@ -1,0 +1,33 @@
+#h1 {
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+#d {
+  background-color: #eef8f3;
+}
+
+.navbar-nav.mr-auto {
+  align-items: center;
+  margin-left: 250px;
+}
+
+.navbar-text {
+  margin-right: 20px;
+}
+
+#span1 {
+  font-weight: 800;
+  color: #000;
+}
+
+#span2 {
+  font-weight: 800;
+  color: #5cb163;
+}
+
+#link {
+  font-weight: 800;
+  color: #878282;
+  margin-right: 40px;
+}

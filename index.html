@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Variables with JS Exemplar</title>
+</head>
+<body>
+  <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+  <div class="controls">
+    <label for="spacing">Spacing:</label>
+    <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+
+    <label for="blur">Blur:</label>
+    <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+
+    <label for="base">Base Color</label>
+    <input id="base" type="color" name="base" value="#00ffff">
+  </div>
+  
+  <div class="card">
+  <img src="img_avatar.png" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>John Doe</b></h4>
+    <p>Architect & Engineer</p>
+  </div>
+</div>
+  
+  <div class="card">
+  <img src="img_avatar.png" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>John Doe</b></h4>
+    <p>Architect & Engineer</p>
+  </div>
+</div>
+  
+  <div class="container">
+  <div class="row">
+    <div class="col-md-offset-3 col-md-6">
+      <div class="panel panel-default bootcards-file">
+        <div class="panel-heading">
+          <h3 class="panel-title">Download Ebook</h3>
+        </div>
+        <div class="list-group">
+          <div class="list-group-item">
+            <a href="#">
+              <i class="icon-file-pdf"></i>
+            </a>
+            <h4 class="list-group-item-heading">
+					    <a href="#">
+					      Bootcards, a Card-based UI
+					    </a>
+					    </h4>
+            <p class="list-group-item-text"><strong>PDF</strong></p>
+            <p class="list-group-item-text"><strong>1.5MB</strong></p>
+          </div>
+          <div class="list-group-item">
+            <p class="list-group-item-text">This ebook covers the basics of creating a card-based UI with Bootcards. Bootcards is based on Bootstrap. It includes stylesheets to give your apps a native look, whether that's on iOS, Android or desktop.    </p>
+          </div>
+        </div>
+        <div class="panel-footer">
+          <div class="btn-group btn-group-justified">
+            <div class="btn-group">
+              <button class="btn btn-default">
+					      <i class="fa fa-arrow-down"></i>
+					      Download
+					    </button>
+            </div>
+            <div class="btn-group">
+              <button class="btn btn-default">
+					      <i class="fa fa-star"></i>
+					      Save
+					    </button>
+            </div>
+            <div class="btn-group">
+              <button class="btn btn-default">
+					      <i class="fa fa-envelope"></i>
+					      Email
+					    </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <img src="https://images.unsplash.com/photo-1530274977867-026fb9b7b6b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+  <style>
+    :root{
+      --base:#00ffff;
+      --spacing:10px;
+      --blur:10px;
+    }
+    img{
+      padding:var(--spacing);
+      background: var(--base);
+      filter:blur(var(--blur));
+    }
+    .hl{
+      color: var(--base);
+    }
+    body {
+      text-align: center;
+      background: #193549;
+      color: white;
+      font-family: 'helvetica neue', sans-serif;
+      font-weight: 100;
+      font-size: 50px;
+    }
+    .controls {
+      margin-bottom: 50px;
+    }
+    input {
+      width: 100px;
+    }
+  </style>
+    
+  <script>
+    var inputs=document.querySelectorAll("input");
+    function handleUpdate(){
+      var suffix=this.dataset.sizing || '';        //to set the propery with proper value
+      // console.log(suffix);
+      document.documentElement.style.setProperty(`--${this.name}`,this.value + suffix);
+    }
+    inputs.forEach(function(input){
+      input.addEventListener("change",handleUpdate);
+      input.addEventListener("mousemove",handleUpdate);
+    });
+  </script>
+</body>
+</html>
