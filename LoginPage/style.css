@@ -59,6 +59,11 @@ body {
     }
 }
 
+p {
+  border: 2px solid powderblue;
+  padding: 30px;
+}
+
 .form {
     position: absolute;
     background: #28292d;
